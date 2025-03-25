@@ -16,7 +16,7 @@ export default function QuizResult({
     <div className="mx-auto">
       <h1 className="flex items-center gap-2 text-3xl gradient-title">
         <Trophy className="h-6 w-6 text-yellow-500" />
-        Quiz Results
+        AI Interview Results
       </h1>
 
       <CardContent className="space-y-6">

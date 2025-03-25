@@ -33,11 +33,11 @@ export default function QuizList({ assessments }) {
                 Recent Quizzes
               </CardTitle>
               <CardDescription>
-                Review your past quiz performance
+                Review your past Interview performance
               </CardDescription>
             </div>
             <Button onClick={() => router.push("/interview/mock")}>
-              Start New Quiz
+              Start New AI Interview
             </Button>
           </div>
         </CardHeader>

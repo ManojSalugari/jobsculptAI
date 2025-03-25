@@ -27,32 +27,31 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="w-full pt-36 md:pt-48 pb-10">
-      <div className="space-y-6 text-center">
-        <div className="space-y-6 mx-auto">
-          <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl gradient-title animate-gradient">
-            Your AI Career Coach for
-            <br />
-            Professional Success
-          </h1>
-          <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl">
-            Advance your career with personalized guidance, interview prep, and
-            AI-powered tools for job success.
-          </p>
+    <section className="w-full pt-12 md:pt-16 pb-10 bg-gray-100 text-black"> {/* Reduced top padding */}
+    <div className="space-y-14 text-center">
+      <div className="space-y-12 mx-auto">
+        <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl text-black drop-shadow-lg">
+          Your AI Career Coach for
+          <br />
+          Professional Success
+        </h1>
+          <p className="mx-auto max-w-[600px] text-gray-700 md:text-xl mt-14 text-black font-semibold shadow-lg animate-pulse">
+  Advance your Career with Optimized Resume,Interview Preparation,Weekly Industry Insights and
+  AI-powered tools.
+</p>
         </div>
-        <div className="flex justify-center space-x-4">
-          <Link href="/dashboard">
-            <Button size="lg" className="px-8">
-              Get Started
-            </Button>
-          </Link>
-          <Link href="https://www.linkedin.com/in/sai-charan-salugari/">
-            <Button size="lg" variant="outline" className="px-8">
-              Watch Demo
-            </Button>
-          </Link>
+        <div className="flex justify-center space-x-4 mt-8"> {/* Added mt-8 for spacing between buttons */}
+        <Link href="/dashboard">
+  <Button
+    size="lg"
+    className="px-8 py-4 text-lg bg-black text-white font-sans relative overflow-hidden"
+  >
+    <span className="shine-text">Get Started for Free</span> <span className="ml-2">→</span>
+  </Button>
+</Link>
+
         </div>
-        <div className="hero-image-wrapper mt-5 md:mt-0">
+        <div className="hero-image-wrapper mt-10 md:mt-16"> {/* Increased mt-5 to mt-10 */}
           <div ref={imageRef} className="hero-image">
             <Image
               src="/banner.jpeg"

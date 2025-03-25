@@ -3,7 +3,7 @@ import { UserPlus, FileEdit, Users, LineChart } from "lucide-react";
 export const howItWorks = [
   {
     title: "Professional Onboarding",
-    description: "Share your industry and expertise for personalized guidance",
+    description: "Signin first & Share your industry & details for personalized guidance",
     icon: <UserPlus className="w-8 h-8 text-primary" />,
   },
   {

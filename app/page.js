@@ -31,67 +31,83 @@ export default function LandingPage() {
       <HeroSection />
 
       {/* Features Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
-        <div className="container mx-auto px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">
-            Powerful Features for Your Career Growth
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {features.map((feature, index) => (
-              <Card
-                key={index}
-                className="border-2 hover:border-primary transition-colors duration-300"
-              >
-                <CardContent className="pt-6 text-center flex flex-col items-center">
-                  <div className="flex flex-col items-center justify-center">
-                    {feature.icon}
-                    <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
-                    <p className="text-muted-foreground">
-                      {feature.description}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      <section className="w-full py-1 md:py-24 lg:py-32 bg-black text-white mt-2">
+  <div className="container mx-auto px-4 md:px-6">
+    
+    <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">
+      Sign in to use these Powerful Features for Your Career Growth
+    </h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+      {features.map((feature, index) => (
+        <Card
+          key={index}
+          className="border-2 border-black hover:border-white bg-white shadow-md hover:text-white"
+        >
+          <CardContent className="pt-6 text-center flex flex-col items-center">
+            <div className="flex flex-col items-center justify-center">
+              <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mb-4">
+                {feature.icon}
+              </div>
+              <h3 className="text-black text-xl font-bold mb-2">{feature.title}</h3>
+              <p className="text-black">{feature.description}</p>
+            </div>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
 
-      {/* Stats Section */}
-      <section className="w-full py-12 md:py-24 bg-muted/50">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
-            <div className="flex flex-col items-center justify-center space-y-2">
-              <h3 className="text-4xl font-bold">50+</h3>
-              <p className="text-muted-foreground">Industries Covered</p>
-            </div>
-            <div className="flex flex-col items-center justify-center space-y-2">
-              <h3 className="text-4xl font-bold">1000+</h3>
-              <p className="text-muted-foreground">Interview Questions</p>
-            </div>
-            <div className="flex flex-col items-center justify-center space-y-2">
-              <h3 className="text-4xl font-bold">95%</h3>
-              <p className="text-muted-foreground">Success Rate</p>
-            </div>
-            <div className="flex flex-col items-center justify-center space-y-2">
-              <h3 className="text-4xl font-bold">24/7</h3>
-              <p className="text-muted-foreground">AI Support</p>
-            </div>
-          </div>
-        </div>
-      </section>
+{/* Stats Section */}
+<div className="flex justify-center mb-8 -mt-4">
+  <h3 className="text-5xl font-bold text-center text-white bg-black py-4 px-6 inline-block">
+    OUR STATS
+  </h3>
+</div>
+<section className="w-full py-8 md:py-16 bg-black -mt-10 text-white">
+  <div className="container mx-auto px-4 md:px-6">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-12 max-w-6xl mx-auto text-center">
+      
+      {/* Industry Covered */}
+      <div className="flex flex-col items-center justify-center space-y-2 bg-black p-6 rounded-xl shadow-lg transform transition-all hover:scale-105 hover:bg-gray-700">
+        <h3 className="text-5xl font-bold text-white shine-text mb-4 heart-beat">50+</h3>
+        <p className="text-white">Industries Covered</p>
+      </div>
+
+      {/* Real Interview Questions */}
+      <div className="flex flex-col items-center justify-center space-y-2 bg-black p-6 rounded-xl shadow-lg transform transition-all hover:scale-105 hover:bg-gray-700">
+        <h3 className="text-5xl font-bold text-white shine-text mb-4 heart-beat">1000+</h3>
+        <p className="text-white">Real Interview Questions</p>
+      </div>
+
+      {/* Success Rate */}
+      <div className="flex flex-col items-center justify-center space-y-2 bg-black p-6 rounded-xl shadow-lg transform transition-all hover:scale-105 hover:bg-gray-700">
+        <h3 className="text-5xl font-bold text-white shine-text mb-4 heart-beat">95%</h3>
+        <p className="text-white">Success Rate</p>
+      </div>
+
+      {/* AI Support */}
+      <div className="flex flex-col items-center justify-center space-y-2 bg-black p-6 rounded-xl shadow-lg transform transition-all hover:scale-105 hover:bg-gray-700">
+        <h3 className="text-5xl font-bold text-white shine-text mb-4 heart-beat">24/7</h3>
+        <p className="text-white">AI Interviewer & Resume Optimization Support</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       {/* How It Works Section */}
-      <section className="w-full py-12 md:py-24 bg-background">
+      <section className="w-full py-12 md:py-24 bg-gray-100 text-black">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-bold mb-4">How It Works</h2>
-            <p className="text-muted-foreground">
-              Four simple steps to accelerate your career growth
+            <p className="text-white bg-black border">
+              Follow these 4 simple steps to accelerate your career growth
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto -mt-16">
             {howItWorks.map((item, index) => (
               <div
                 key={index}
@@ -101,21 +117,22 @@ export default function LandingPage() {
                   {item.icon}
                 </div>
                 <h3 className="font-semibold text-xl">{item.title}</h3>
-                <p className="text-muted-foreground">{item.description}</p>
+                <p className="text-gray-700">{item.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="w-full py-12 md:py-24 bg-muted/50">
+      {/* Testimonials Section */}
+      <section className="w-full py-12 md:py-24 bg-gray-700 text-white">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-bold text-center mb-12">
             What Our Users Say
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {testimonial.map((testimonial, index) => (
-              <Card key={index} className="bg-background">
+              <Card key={index} className="bg-white">
                 <CardContent className="pt-6">
                   <div className="flex flex-col space-y-4">
                     <div className="flex items-center space-x-4 mb-4">
@@ -129,17 +146,17 @@ export default function LandingPage() {
                         />
                       </div>
                       <div>
-                        <p className="font-semibold">{testimonial.author}</p>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="font-semibold text-black">{testimonial.author}</p>
+                        <p className="text-sm text-black">
                           {testimonial.role}
                         </p>
-                        <p className="text-sm text-primary">
+                        <p className="text-opacity-40 text-black">
                           {testimonial.company}
                         </p>
                       </div>
                     </div>
                     <blockquote>
-                      <p className="text-muted-foreground italic relative">
+                      <p className="text-black italic relative">
                         <span className="text-3xl text-primary absolute -top-4 -left-2">
                           &quot;
                         </span>
@@ -158,13 +175,13 @@ export default function LandingPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="w-full py-12 md:py-24">
+      <section className="w-full py-12 md:py-24 bg-gray-100 text-black">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-bold mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-muted-foreground">
+            <p className="text-gray-700">
               Find answers to common questions about our platform
             </p>
           </div>
@@ -186,24 +203,25 @@ export default function LandingPage() {
 
       {/* CTA Section */}
       <section className="w-full">
-        <div className="mx-auto py-24 gradient rounded-lg">
+        <div className="mx-auto py-24 gradient rounded-lg bg-gray-100 text-black">
           <div className="flex flex-col items-center justify-center space-y-4 text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold tracking-tighter text-primary-foreground sm:text-4xl md:text-5xl">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
               Ready to Accelerate Your Career?
             </h2>
-            <p className="mx-auto max-w-[600px] text-primary-foreground/80 md:text-xl">
+            <p className="mx-auto max-w-[600px] text-gray-700 md:text-xl">
               Join thousands of professionals who are advancing their careers
               with AI-powered guidance.
             </p>
             <Link href="/dashboard" passHref>
-              <Button
-                size="lg"
-                variant="secondary"
-                className="h-11 mt-5 animate-bounce"
-              >
-                Start Your Journey Today <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
+  <Button
+    size="lg"
+    variant="secondary"
+    className="h-16 mt-5 -mb-8 animate-bounce bg-black text-xl text-white px-20"
+  >
+    Start Your Journey Today <ArrowRight className="ml-4 h-10 w-10" />
+  </Button>
+</Link>
+
           </div>
         </div>
       </section>

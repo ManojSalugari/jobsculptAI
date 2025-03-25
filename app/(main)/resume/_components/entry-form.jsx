@@ -230,12 +230,12 @@ export function EntryForm({ type, entries, onChange }) {
               {isImproving ? (
                 <>
                   <Loader2 className="h-4 w-4 mr-2 animate-spin" />
-                  Improving...
+                  Improving with Gemini AI...
                 </>
               ) : (
                 <>
                   <Sparkles className="h-4 w-4 mr-2" />
-                  Improve with AI
+                  Improve with Gemini AI
                 </>
               )}
             </Button>
